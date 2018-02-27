@@ -1,0 +1,14 @@
+{
+  "name": "eth",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "aglio": "^2.3.0"
+  },
+  "scripts": {
+    "build-docs": "aglio --no-theme-condense -i api/api.apib --theme-variables slate --theme-template triple -o artifacts/index.html",
+    "build-postman-collections": "apiary2postman blueprint api/account.md > artifacts/postman.json"
+  },
+  "author": "",
+  "license": "ISC"
+}
