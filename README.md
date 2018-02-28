@@ -15,6 +15,10 @@
  
  > If you want to change host and port, use `geth --rpcapi="db,eth,net,web3,personal,web3" --rpc --rpcaddr <ip> --rpcport <portnumber>` 
 
+## Build
+ - Static API Documentation
+ - Postman collection
+
 ### API Documentation
 
 API has been documented using API blueprint.
@@ -22,3 +26,10 @@ API has been documented using API blueprint.
  - API blueprint file is located in `api/api.apib`
  - To build static html documentation, run `npm run-script build-docs`, static documentation is stored in `artifacts/index.html` 
  
+### Postman Collection
+
+To build postman collection json, run the command
+
+```
+npm run-script build-postman-collections
+```
