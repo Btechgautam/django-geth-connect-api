@@ -6,9 +6,11 @@
     "aglio": "^2.3.0"
   },
   "scripts": {
-    "build-docs": "aglio --no-theme-condense -i api/api.apib --theme-variables slate --theme-template triple -o artifacts/index.html",
-    "build-postman-collections": "apiary2postman blueprint api/account.md > artifacts/postman.json"
+    "prebuild-docs": "./node_modules/.bin/hercule api/api.apib -o artifacts/api.apib",
+    "build-docs": "./node_modules/.bin/aglio --no-theme-condense -i artifacts/api.apib --theme-variables slate --theme-template triple -o artifacts/index.html",
+    "build-postman-collections": "apiary2postman blueprint artifacts/api.apib > artifacts/postman.json",
+    "prebuild-postman-collections": "./node_modules/.bin/hercule api/api.apib -o artifacts/api.apib"
   },
-  "author": "",
+  "author": "Bhargav Nanekalva",
   "license": "ISC"
 }
