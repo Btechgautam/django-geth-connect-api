@@ -2,7 +2,7 @@
 
 The personal API manages private keys in the key store.
 
-## Create an account [/api/account]
+## Create an account [/api/account/new]
 
 ### Create a new account [POST]
 
@@ -29,7 +29,7 @@ Create a new account
         "result": "0x14d3d482f867aaf6dac5bad888058d507071ed00"
     }
 
-## Lock an account [/api/account]
+## Lock an account [/api/account/lock]
 
 ### Lock an account [POST] 
 
@@ -57,7 +57,7 @@ Lock an account
     }
 
 
-## Unlock account [/api/account]
+## Unlock account [/api/account/unlock]
 
 ### Unlock an account [POST]
 
