@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: http://172.31.19.85:8545
+HOST: http://localhost:8000
 
 # API for Ethereum JSON RPC
 
@@ -10,7 +10,8 @@ requests quickly, organize them in collections and share them with your co-worke
 
 Try Django Ethereum RPC Connect API in Postman
  
-<p><a href="/artifacts/postman.json"><img src="https://run.pstmn.io/button.svg" alt="Run in Postman"></a></p>
+<p><a target="_blank" href="https://www.getpostman.com/collections/0c373fb12ab37c748069"><img src="https://run.pstmn.io/button.svg" alt="Run in Postman"></a></p>
+
 
 ## Test Ethereum Node
 
@@ -19,12 +20,23 @@ Try Django Ethereum RPC Connect API in Postman
 ## To setup your own Ethereum Node
 
  - Install `geth` by following the official <a href="https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum" target="_blank">instructions</a>
- - Start Ethereum node with RPC by running the command `geth --rpcapi="db,eth,net,web3,personal,web3" --rpc`
+ - Start Ethereum node with RPC by running the command
+ 
+ 
+```
+geth --rpcapi="db,eth,net,web3,personal,web3" --rpc
+```
+
  
 ## RPC will be exposed on
- > 127.0.0.1 port 8545
+ - 127.0.0.1 port 8545
  
- > If you want to change host and port, use `geth --rpcapi="db,eth,net,web3,personal,web3" --rpc --rpcaddr <ip> --rpcport <portnumber>` 
+ - If you want to change host and port, use 
+
+
+```
+ geth --rpcapi="db,eth,net,web3,personal,web3" --rpc --rpcaddr <ip> --rpcport <portnumber>` 
+```
 
 # Group Ethereum RPC API
 
